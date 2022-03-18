@@ -59,9 +59,6 @@ nav{
     color:greenyellow
 }
 
-
-
-
 button {
     padding: 9px 25px;
     background-color: green;
@@ -78,4 +75,14 @@ button {
 
 button:hover{
     background-color: green;
+}
+
+/* Body */
+
+.row h1{
+    color: white;
+}
+
+.row h1.textOne {
+    color: green;
 }
