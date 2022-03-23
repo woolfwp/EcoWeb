@@ -13,13 +13,13 @@
 
     <SCript type="text/javascript" src="js/funcion-color.js" ></SCript>
 
-    <title>EcoWeb</title>
+    <title>EcoWeb|Home</title>
 </head>
 <body>
     <div class="container">
         <div class="navbar">
             <img class="logo" src="images/logoEcoWeb.png" alt="logo">
-        <nav>
+        <nav class="menu spread">
             <ul class="nav_links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="page/about.html">About</a></li>
@@ -28,22 +28,26 @@
                 <li><a href="page/events.html">Events</a></li>
                 <li><a href="page/signUp.html">Sign Up</a></li>
                 
+                <a class="signIn" href="page/signIn.html"><button>Sign In</button></a>
             </ul>
         </nav>
-        <a class="signIn" href="page/signIn.html"><button>Sign In</button></a>
         </div>
+        <img src="images/list.svg" alt="" class="menu-list">
         <div class="row">
             <div class="eslogan">
-                <h1 class="textOne" id="colorOne">Y</h1>
-                <h1 class="textSecond"id="colorSecond" >our New</h1>
-                <h1 class="textOne" id="colorOne">Lifestyle</h1>
-                <h1 class="textOne" id="colorOne">Y</h1>
-                <h1 class="textSecond" id="colorSecond">our</h1>
-                <h1 class="textOne" id="colorOne">Healthier </h1>
-                <h1 class="textSecond" id="colorSecond">Life</h1>
+                <h1 id="espacio_der">
+                    <span class="textOne" id="colorOne">Y</span><span class="textSecond"id="colorSecond">our New </span> 
+                    <span class="textOne" id="colorOne">Lifestyle </span> 
+                </h1>
+                <h1>
+                    <span class="textOne" id="colorOne">Y</span><span class="textSecond"id="colorSecond">our </span>
+                    <span class="textOne" id="colorOne">Healthier </span><span class="textSecond"id="colorSecond">Life </span>
+                </h1>
+                <button class="bt_explore" type="submit">Explore</button>
             </div>
         </div>
     </div>
+    <script src="js/menu.js"></script>
 
     
 </body>
