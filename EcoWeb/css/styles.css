@@ -13,7 +13,13 @@
     background-position: center;
     background-size: cover;
 }
- 
+
+.contenedor{
+    margin: auto  50px;
+}
+h1{
+    color: white;
+}
 
 li, a, button {
     font-family: "Montserrat", sans-serif;
