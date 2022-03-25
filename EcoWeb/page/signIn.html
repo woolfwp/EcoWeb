@@ -35,10 +35,24 @@
         <img src="../images/list.svg" alt="" class="menu-list">
         <div class="contenedor">
             <div class="login">
-                <h1>Sig In</h1>
-                <input class="form-l" type="text" name="usuario" value="" placeholder="Usuario" required>
-                <input class="form-l" type="password" name="contraseña" value="" placeholder="Contraseña" required>
-                <input class="button-l" type="submit" name="" value="Sig In">
+                <h1>Sign In</h1>
+                <input 
+                class="form-l" 
+                type="text" 
+                [(ngModel)]="email"
+                name="email"
+                placeholder="email" 
+                required="required"
+                />
+                <input 
+                class="form-l" 
+                type="password"
+                [(ngModel)]="password" 
+                name="password" 
+                placeholder="password" 
+                required="required"
+                />
+                <button type="submit" (click)="login()">Sign in</button>
                 <div class="log-emp">
                     <img src="../images/icons8-logo-de-google.svg" alt="" class="logo-f">
                     <img src="../images/icons8-facebook-nuevo.svg" alt="" class="logo-f">
