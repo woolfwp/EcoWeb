@@ -152,11 +152,6 @@ body{
     text-align: center;
 }
 
-.post-body span{
-    display: inline-block;
-    margin-bottom: 10px;
-    color: #999;
-}
 
 .post-body h2{
     margin-bottom: 15px;
@@ -167,6 +162,11 @@ body{
 .post-body p{
     margin-bottom: 15px;
     line-height: 1.5;
+}
+
+.post-body h5{
+    margin-bottom: 15px;
+    
 }
 
 .post-body .post-link{
