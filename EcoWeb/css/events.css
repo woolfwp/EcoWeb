@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:500");
+
+/*Navegacion*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navegacion{
+    width: 100%;
+    height: 15vh;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.menu{
+    display: flex;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    
+}
+
+nav{
+    order: 1;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover, 
+.nav_links li a.active
+ {
+    color:greenyellow
+}
+
+button {
+    padding: 9px 25px;
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.signIn {
+    order: 2;
+}
+
+button:hover{
+    background-color: green;
+}
+
+/*Navegacion*/
+
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.encabezado h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.post-list{
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px, 15px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.post-img{
+    background: url(/EcoWeb/images/imgexample.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post{
+    box-shadow: 0 1px 6px 1px #ffffff;
+    overflow: hidden;
+    transition: .2s;
+    background-color: white;
+}
+
+
+
+.post:hover{
+   transform: translateY(-4px);
+   box-shadow: 0 1px 14px 2px #3dff02;
+}
+
+.post-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post:hover .post-img{
+    transform: scale(1.1);
+}
+
+.post-body{
+    padding: 15px;
+    text-align: center;
+}
+
+.post-body span{
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.post-body h2{
+    margin-bottom: 15px;
+}
+
+.post-body p{
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.post-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #249b00;
+    
+}
