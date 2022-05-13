@@ -109,6 +109,8 @@ body{
     background-size: cover;
     background-position: center;
     transition: .2s;
+    display: block;
+    border-radius: 5%;
 }
 
 .post-img:hover{
