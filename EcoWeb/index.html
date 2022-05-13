@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,43 +12,61 @@
 
     <!-- JS -->
 
-    <SCript type="text/javascript" src="js/funcion-color.js" ></SCript>
+    <SCript type="text/javascript" src="js/funcion-color.js"></SCript>
+    <script src="js/menu.js"></script>
 
     <title>EcoWeb|Home</title>
 </head>
+
 <body>
-    <div class="container">
+    <section class="navegacion">
         <div class="navbar">
-            <img class="logo" src="images/logoEcoWeb.png" alt="logo">
-        <nav class="menu spread">
-            <ul class="nav_links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="page/about.html">About</a></li>
-                <li><a href="page/routes.html">Routes</a></li>
-                <li><a href="page/events.html">Events</a></li>
-                <li><a href="page/signUp.html">Sign Up</a></li>
-                
-                <a class="signIn" href="page/signIn.html"><button>Sign In</button></a>
-            </ul>
-        </nav>
+            <img class="logo" src="images/LogoEcoWeb.png" alt="logo">
+            <nav class="menu spread">
+                <ul class="nav_links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="routes.html" class="active">Routes</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="signUp.html">Sign Up</a></li>
+
+                    <a class="signIn" href="signIn.html"><button>Sign In</button></a>
+                </ul>
+            </nav>
         </div>
-        <img src="images/list.svg" alt="" class="menu-list">
-        <div class="row">
-            <div class="eslogan">
-                <h1 id="espacio_der">
-                    <span class="textOne" id="colorOne">Y</span><span class="textSecond"id="colorSecond">our New </span> 
-                    <span class="textOne" id="colorOne">Lifestyle </span> 
-                </h1>
-                <h1>
-                    <span class="textOne" id="colorOne">Y</span><span class="textSecond"id="colorSecond">our </span>
-                    <span class="textOne" id="colorOne">Healthier </span><span class="textSecond"id="colorSecond">Life </span>
-                </h1>
-                <button class="bt_explore" type="submit">Explore</button>
+    </section>
+
+    <section class="home">
+
+        <div class="content">
+
+            <div class="post-img">
+
+            </div>
+
+            <div class="row">
+                <div class="eslogan">
+                    <h1 id="espacio_der">
+                        <span class="textOne" id="colorOne">Y</span><span class="textSecond" id="colorSecond">our New
+                        </span>
+                        <span class="textOne" id="colorOne">Lifestyle </span>
+                    </h1>
+                    <h1>
+                        <span class="textOne" id="colorOne">Y</span><span class="textSecond" id="colorSecond">our
+                        </span>
+                        <span class="textOne" id="colorOne">Healthier </span><span class="textSecond"
+                            id="colorSecond">Life
+                        </span>
+                    </h1>
+                </div>
+                <a href="page/routes.html"><button class="bt_explore" type="submit">Explorar</button></a>
             </div>
         </div>
-    </div>
-    <script src="js/menu.js"></script>
+    </section>
 
-    
+
+
+
 </body>
+
 </html>
