@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/user.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+
+    <script type="text/javascript" src="../../js/funcion-color.js" ></script>
+    <script src="../../js/menu.js"></script>
+    <title>EcoWeb/Events</title>
+</head>
+<body>
+    <section class="navegacion">
+            <div class="navbar">
+                <img class="logo" src="../../images/logoEcoWeb.png" alt="logo">
+            <nav class="menu spread">
+                <ul class="nav_links">
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="routes.html">Rutas</a></li>
+                    <li><a href="events.html" >Eventos</a></li>
+                    
+                    <a class="signIn" href="user.html"><button>Usuario</button></a>
+                </ul>
+            </nav>
+            </div> 
+    </section>
+    <div class="encabezado">
+        <h1>Usuario</h1>
+    </div>
+    <section class="contenedor">
+        <div class="login">
+            <input class="form-l" type="text" name="nombre" value="" placeholder="Nombre" required>
+            <input class="form-l" type="text" name="apellido" value="" placeholder="Apellido" required>
+            <input class="form-l" type="email" name="email" value="" placeholder="Email" required>
+            <input class="form-l" type="password" name="contraseña" value="" placeholder="Contraseña" required>
+            <input class="button-l" type="submit" onclick="alerta('Se modifico la infromacion');" name="" value="Configurar">
+            <button type="button" onclick="cerrarSesion();">Cerrar sesion</button>
+            <button type="button">Eliminar cuenta</button>
+        </div>
+        
+    </div>
+    </section>
+    <script src="../../js/app.js"></script>
+</body>
+</html>
