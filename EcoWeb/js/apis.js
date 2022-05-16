@@ -1,29 +1,22 @@
-<<<<<<< HEAD
-const urlApiRuta = 'http://localhost:8000/ruta/Pico%20Pnace';
+const urlApiRuta = 'http://localhost:8000/ruta/Pico%20Pance';
 
 const cargarRutas = async() => {
     try {
-    
-        const respuestaRutas = await fetch(urlApiRuta)
-=======
-
-const urlApiRuta = 'http://localhost:8000/ruta/Pico%20Pnace'
-
-const cargarRutas = async() => {
-    try {
-        console.log('paso 1', urlApiRuta)
-        const respuestaRutas = await fetch(urlApiRuta)
-        console.log('paso 2')
-
->>>>>>> 36bded0ba834e98ba0af66f6988975511a293931
+        console.log('paso 1');
+        const respuestaRutas = await fetch(urlApiRuta);
         const datosRuta = await respuestaRutas.json();
+        
+        let nombre = datosRuta.nombre;
+        let distancia = datosRuta.distancia;
+        let descripcion = datosRuta.descripcion;
+        let ubicacion = datosRuta.ubicacion;
+        let fecha = datosRuta.fecha;
 
-        let rutas = '';
-        datosRuta.nombre.forEach(ruta => {
-            rutas += '<h2>${datosRuta.nombre}</h2>';
-        });
-
-        document.getElementById('nombreRuta').innerHTML = rutas;
+        document.getElementById('nombreRuta').innerHTML = nombre;
+        document.getElementById('descripcionRuta').innerHTML = descripcion;
+        document.getElementById('distanciaRuta').innerHTML = 'Distancia: '+distancia+'Km';
+        document.getElementById('ubicacionRuta').innerHTML = 'Ubicacion: '+ubicacion;
+        document.getElementById('fechaRuta').innerHTML = 'fecha: '+fecha;
 
     } catch (error) {
         console.log(error);
