@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
     <!-- JS -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS561v-Gl9X-E_FKCeemCQ2msF4xWYDYs&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="../../js/map.js"></script>
 
     <script type="text/javascript" src="../../js/funcion-color.js" ></script>
     <script src="../../js/menu.js"></script>
@@ -56,16 +62,15 @@
                 <div class="post-body">
                     
                     <h2>Disfruta tu ruta</h2>
-                    <p>Durante el recorrido del camino encontrara diferentes lugares con avisos qr.
-                        estos avisos al leerlo con el lector, le brindara informacion sobre la biodiversidad 
-                        de la ruta.
+                    <p>
+                        Durante el recorrido del sendero ecológico, encontrará diferentes lugares con señalización QR. Estos avisos se podrán escanear con el dispositivo móvil, lo que le brindará información sobre la biodiversidad de la ruta.
                     </p>
-                    <a href="#" class="post-link">Guia Gps</a>
-                    <a href="#" class="post-link">Lector Qr</a>
+                    <a href="mapa.html" class="post-link" id="gps">Guia Gps</a>
+                    <a href="#" class="post-link" id="qr">Lector Qr</a>
                 </div>
                 <div class="post-header">
                     <div class="post-img-ruta">
-
+                        <div id="map"></div>
                     </div>
                 </div>
             </article>
